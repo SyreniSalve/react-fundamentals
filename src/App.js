@@ -1,19 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
+function ChildrenWithTitile({ title, children }) {
   return (
-    <>
-    <h1>Hello world</h1>
-    <p>You look beautiful</p>
-    <FirstReactComponent />
-    </>
+    <div>
+      <h2>{title}</h2>
+      {children}
+    </div>
   );
 }
 
-function FirstReactComponent() {
+const FirstReactComponent = () => <p>I am new here!</p>;
+
+function App() {
   return (
-    <p>I am new here!</p>
+    <div>
+      <h1>Hello world</h1>
+      <p>You look beautiful</p>
+      <FirstReactComponent />
+      <ChildrenWithTitile title={"I am title"} children={"I am children"} />
+    </div>
   );
 }
 

@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+const FirstReactComponent = () => <p>I am new here!</p>
+
 function App() {
   return (
     <>
@@ -8,12 +10,6 @@ function App() {
     <p>You look beautiful</p>
     <FirstReactComponent />
     </>
-  );
-}
-
-function FirstReactComponent() {
-  return (
-    <p>I am new here!</p>
   );
 }
 

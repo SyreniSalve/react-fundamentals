@@ -6,7 +6,14 @@ function App() {
     <>
     <h1>Hello world</h1>
     <p>You look beautiful</p>
+    <FirstReactComponent />
     </>
+  );
+}
+
+function FirstReactComponent() {
+  return (
+    <p>I am new here!</p>
   );
 }
 

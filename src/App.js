@@ -7,7 +7,6 @@ const ChildrenWithTitile = ({ title, children }) =>
       {children}
     </div>
   
-
 const FirstReactComponent = () => <p>I am new here!</p>;
 
 function App() {

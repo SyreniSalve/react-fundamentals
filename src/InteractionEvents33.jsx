@@ -1,16 +1,17 @@
 export default function InteractionEvents33() {
   function handleClick() {
-    alert("Button was clicked.");
+    alert("Button was clicked.")
   }
-
-  function handleChange() {
-    console.log(document.getElementById('input').value);
+ 
+  function handleChange(event) {
+    const value = event.target.value
+    console.log(value);
   }
 
   return (
     <section>
         <button onClick={handleClick}>Button</button>
-        <input id='input' type="text" onInput={handleChange}/>
+        <input type="text" onChange={handleChange} value={handleChange.value} />
     </section>
-  );
+  )
 }

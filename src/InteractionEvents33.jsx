@@ -1,18 +1,16 @@
 export default function InteractionEvents33() {
-  function handlerClick() {
+  function handleClick() {
     alert("Button was clicked.");
   }
 
-  function handlerChange() {
-    console.log("Hello");
+  function handleChange() {
+    console.log(document.getElementById('input').value);
   }
 
   return (
     <section>
-      <form>
-        <button onClick={handlerClick}>Button</button>
-        <input type="text" />
-      </form>
+        <button onClick={handleClick}>Button</button>
+        <input id='input' type="text" onInput={handleChange}/>
     </section>
   );
 }

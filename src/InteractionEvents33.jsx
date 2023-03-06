@@ -9,8 +9,10 @@ export default function InteractionEvents33() {
 
   return (
     <section>
-      <button onClick={handlerClick}>Button</button>
-      <input type="text"/>
+      <form>
+        <button onClick={handlerClick}>Button</button>
+        <input type="text" />
+      </form>
     </section>
   );
 }

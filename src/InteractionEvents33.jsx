@@ -11,7 +11,7 @@ export default function InteractionEvents33() {
   return (
     <section>
         <button onClick={handleClick}>Button</button>
-        <input type="text" onChange={handleChange} value={handleChange.value} />
+        <input type="text" onChange={handleChange} />
     </section>
   )
 }

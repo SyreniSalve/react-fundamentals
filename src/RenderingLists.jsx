@@ -10,12 +10,27 @@ const listForRender = [
   { value: 8, name: "List item value 8" },
 ];
 
-export const listOfAllEmenets = listForRender.map((item) => (
-  <li>{item.name}</li>
-));
+export function FullList() {
+  const listOfAllEmenets = listForRender.map((item) => <li>{item.name}</li>);
+  return (
+    <>
+      <h2>Full list </h2>
+      <ul>{listOfAllEmenets}</ul>
+    </>
+  );
+}
 
-const filterlist = listForRender.filter(
-  (item) => item.value % 2 === 0
-);
+export function FilteredList() {
+  const filterlist = listForRender.filter((item) => item.value % 2 === 0);
+  const filteredList = filterlist.map((item) => <li>{item.name}</li>);
+  return (
+    <>
+      <h2>Filtered List</h2>
+      <ul>{filteredList}</ul>
+    </>
+  )
+}
 
-export const filteredList = filterlist.map((item) => <li>{item.name}</li>)
+
+
+

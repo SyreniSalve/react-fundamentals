@@ -1,11 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { StatefulComponent34 } from './StatefulComponent34';
+import { SynchronyzingWithEffects35 } from "./SynchronizingWithEffects35";
 
 function App() {
-  return (
-    <StatefulComponent34 />
-  );
+  return <SynchronyzingWithEffects35 />;
 }
 
 export default App;

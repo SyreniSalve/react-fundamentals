@@ -9,7 +9,7 @@ export function SynchronyzingWithEffects35() {
 
   useEffect(() => {
     if (count === 5) alert("Hight FIVE!");
-  }, []);
+  }, [count]);
 
   return (
     <div>

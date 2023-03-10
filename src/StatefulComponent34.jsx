@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export function StatefulComponent34() {
-    const [count, setCount] = useState(0);
-
+  const [count, setCount] = useState(0);
+  
     function handleIncrement() {
         setCount(count => count + 1);
     }
@@ -12,7 +12,7 @@ export function StatefulComponent34() {
             setCount(count => count - 1);
         }
     }
-    
+
   return (
     <div>
       <button onClick={handleIncrement}>Increment</button>

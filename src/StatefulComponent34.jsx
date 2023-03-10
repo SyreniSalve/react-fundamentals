@@ -12,7 +12,6 @@ export function StatefulComponent34() {
             setCount(count => count - 1);
         }
     }
-  }
 
   return (
     <div>
